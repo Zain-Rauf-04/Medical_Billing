@@ -1,0 +1,389 @@
+<div class="page">
+  <header class="page-header">
+    <div class="page-header__text">
+      <h1 class="page-title">New Claim: Step 3</h1>
+      <p class="page-subtitle">
+        Real-time Insurance Verification &amp; Eligibility Check
+      </p>
+    </div>
+    <div class="progress">
+      <ul class="progress__steps">
+        <li class="progress__step progress__step--done"></li>
+        <li class="progress__step progress__step--done"></li>
+        <li class="progress__step progress__step--current"></li>
+        <li class="progress__step progress__step--upcoming"></li>
+      </ul>
+      <span class="progress__label">3 of 4 COMPLETE</span>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="asidebar">
+      <div class="card">
+        <h2 class="card__title card__title--accent">
+          <img src="/icons/Fingerprint-blue.svg" alt="Fingerprint Icon" />
+          Verifier Credentials
+        </h2>
+        <div class="field">
+          <label class="field__label" for="subscriber-id">Subscriber ID</label>
+          <input
+            class="field__input"
+            type="text"
+            id="subscriber-id"
+            value="BCBS-449201-902"
+            readonly
+          />
+        </div>
+        <div class="field">
+          <label class="field__label" for="payer-name">Payer Name</label>
+          <div class="select">
+            <select class="select__input" id="payer-name">
+              <option>Blue Cross Blue Shield (BCBS)</option>
+            </select>
+            <svg
+              class="select__chevron"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="field">
+          <label class="field__label" for="service-type">Service Type</label>
+          <div class="select">
+            <select class="select__input" id="service-type">
+              <option>Professional Office Visit</option>
+            </select>
+            <svg
+              class="select__chevron"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 9L12 15L18 9"
+                stroke="#6B7280"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--block">
+          Fetch Eligibility
+          <img src="/icons/Flash.svg" alt="Flash Icon" />
+        </button>
+      </div>
+      <div class="card card--success">
+        <h2 class="card__title card__title--success">
+          <span class="badge-icon">
+            <img src="/icons/Verified-green Icon.svg" alt="Verified Icon" />
+          </span>
+          Real-time Enabled
+        </h2>
+        <p class="card__desc">
+          Direct API link with BCBS established. Last ping: 2s ago.
+        </p>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="card patient-banner">
+        <div class="patient-banner__icon">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2L4 6V11C4 16.5 7.5 21.3 12 22.5C16.5 21.3 20 16.5 20 11V6L12 2Z"
+              fill="#2563EB"
+            />
+          </svg>
+        </div>
+        <div class="patient-banner__info">
+          <div class="patient-banner__name-row">
+            <p class="patient-banner__name">Emily R. Thompson</p>
+            <span class="badge badge--coverage">ACTIVE COVERAGE</span>
+          </div>
+          <p class="patient-banner__plan">
+            Group #998271A &bull; Plan: PPO Premium Gold
+          </p>
+        </div>
+        <div class="patient-banner__date">
+          <p class="patient-banner__date-label">AS OF TODAY</p>
+          <p class="patient-banner__date-value">Oct 24, 2023</p>
+        </div>
+      </div>
+      <div class="coverage-grid">
+        <div class="card coverage-card">
+          <div class="coverage-card__header">
+            <span class="coverage-card__icon coverage-card__icon--blue">
+              <img src="/icons/Dollar-blue Note.svg" alt="Dollar Note Icon" />
+            </span>
+            <svg
+              class="coverage-card__info"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="9" stroke="#9CA3AF" stroke-width="2" />
+              <path
+                d="M12 16V12"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 8H12.01"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="coverage-card__label">Primary Copay</p>
+          <p class="coverage-card__value">$25.00</p>
+          <p class="coverage-card__note coverage-card__note--success">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 13L9 17L19 7"
+                stroke="#16A34A"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Fully Covered
+          </p>
+        </div>
+        <div class="card coverage-card">
+          <div class="coverage-card__header">
+            <span class="coverage-card__icon coverage-card__icon--blue">
+              <img src="/icons/Wallet-blue.svg" alt="Wallet Icon" />
+            </span>
+            <svg
+              class="coverage-card__info"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="9" stroke="#9CA3AF" stroke-width="2" />
+              <path
+                d="M12 16V12"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 8H12.01"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="coverage-card__label">Deductible Met</p>
+          <p class="coverage-card__value">
+            $1,250 <span class="coverage-card__value-sub">/ $2k</span>
+          </p>
+          <div class="progress-bar">
+            <div class="progress-bar__fill" style="width: 62%"></div>
+          </div>
+        </div>
+        <div class="card coverage-card">
+          <div class="coverage-card__header">
+            <span class="coverage-card__icon coverage-card__icon--blue">
+              <img src="/icons/Dollar-blue Circle.svg" alt="Dollar Icon" />
+            </span>
+            <svg
+              class="coverage-card__info"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="9" stroke="#9CA3AF" stroke-width="2" />
+              <path
+                d="M12 16V12"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 8H12.01"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <p class="coverage-card__label">OOP Maximum</p>
+          <p class="coverage-card__value">$4,800</p>
+          <p class="coverage-card__note">Remaining</p>
+          <p class="coverage-card__note coverage-card__note--muted">
+            Total Cap: $6,500
+          </p>
+        </div>
+      </div>
+      <div class="card limitations">
+        <div class="limitations__header">
+          <h2 class="limitations__title">Service Specific Limitations</h2>
+          <a href="#" class="limitations__link">
+            View Full EOB
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                stroke="#2563EB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15 3H21V9"
+                stroke="#2563EB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10 14L21 3"
+                stroke="#2563EB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="notice notice--warning">
+          <svg
+            class="notice__icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.29 3.86L1.82 18A2 2 0 0 0 3.54 21H20.46A2 2 0 0 0 22.18 18L13.71 3.86A2 2 0 0 0 10.29 3.86Z"
+              stroke="#D97706"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 9V13"
+              stroke="#D97706"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M12 17H12.01"
+              stroke="#D97706"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <div class="notice__text">
+            <p class="notice__title">Prior Authorization Required</p>
+            <p class="notice__desc">
+              This plan requires authorization for diagnostic imaging services
+              (MRI, CT). Please submit a pre-auth request.
+            </p>
+          </div>
+        </div>
+        <div class="notice notice--info">
+          <svg
+            class="notice__icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="9" stroke="#16A34A" stroke-width="2" />
+            <path
+              d="M12 11V16"
+              stroke="#16A34A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M12 8H12.01"
+              stroke="#16A34A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <div class="notice__text">
+            <p class="notice__title">Network Provider Status</p>
+            <p class="notice__desc">
+              The current provider is identified as &ldquo;In-Network&rdquo; for
+              this subscriber&rsquo;s primary PPO cluster.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer-actions">
+    <button class="btn btn--outline">Back to Patient<br />Details</button>
+    <button class="btn btn--text">Save for<br />Later</button>
+    <button class="btn btn--success">
+      Continue to<br />Submission
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 12H19"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M12 5L19 12L12 19"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </footer>
+</div>

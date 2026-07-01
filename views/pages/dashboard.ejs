@@ -1,0 +1,240 @@
+<body>
+  <div class="container">
+    <div class="right-section">
+      <main class="main-content">
+        <div class="revenue-main">
+          <div class="revenue-titles">
+            <h1>Revenue Dashboard</h1>
+            <p>
+              Welcome back. Here's what's happening with your practice today.
+            </p>
+          </div>
+          <div class="revenue-titles-btns">
+            <button class="revenue-title-btn1">
+              <img src="/icons/Calender.svg" alt="Calender Icon" />Last 30 Days
+            </button>
+            <button class="revenue-title-btn2">
+              <img src="/icons/Download.svg" alt="Download Icon" />Export Report
+            </button>
+          </div>
+        </div>
+        <div class="revenue-cards">
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span
+                ><img src="/icons/Blue Billing.svg" alt="Billing Icon"
+              /></span>
+              <h6>+12%</h6>
+            </div>
+            <div class="revenue-card-description"><p>TOTAL REVENUE</p></div>
+            <div class="revenue-card-amount"><h3>$425.2K</h3></div>
+          </div>
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span><img src="/icons/Pending.svg" alt="Pending Icon" /></span>
+            </div>
+            <div class="revenue-card-description"><p>PENDING CLAIMS</p></div>
+            <div class="revenue-card-amount"><h3>128</h3></div>
+          </div>
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span
+                ><img src="/icons/Circle Tick.svg" alt="Circle Tick Icon"
+              /></span>
+            </div>
+            <div class="revenue-card-description"><p>APPROVED CLAIMS</p></div>
+            <div class="revenue-card-amount"><h3>842</h3></div>
+          </div>
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span
+                ><img src="/icons/Cricle Cross.svg" alt="Cricle Cross Icon"
+              /></span>
+            </div>
+            <div class="revenue-card-description"><p>REJECTED CLAIMS</p></div>
+            <div class="revenue-card-amount"><h3>42</h3></div>
+          </div>
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span
+                ><img
+                  src="/icons/Appointment Dot.svg"
+                  alt="Appointment Dot Icon"
+              /></span>
+            </div>
+            <div class="revenue-card-description"><p>TODAY'S APPTS</p></div>
+            <div class="revenue-card-amount"><h3>18</h3></div>
+          </div>
+          <div class="revenue-card">
+            <div class="revenue-card-icons">
+              <span><img src="/icons/Bank.svg" alt="Bank Icon" /></span>
+            </div>
+            <div class="revenue-card-description"><p>OUTSTANDING</p></div>
+            <div class="revenue-card-amount"><h3>$32K</h3></div>
+          </div>
+        </div>
+        <div class="revenue-analytics">
+          <div class="area-chart">
+            <div class="area-chart-heading">
+              <p class="area-chart-h3">Revenue Analytics</p>
+              <div class="area-chart-headpoints">
+                <img src="/icons/Blue Dot.svg" alt="Blue Dot Icon" />
+                <p>Claims</p>
+                <img src="/icons/Green Dot.svg" alt="Green Dot Icon" />
+                <p>Direct Pay</p>
+              </div>
+            </div>
+            <div class="area-chart-graph">
+              <div class="bar-chart">
+                <div class="chart-bar" style="height: 40%"></div>
+                <div class="chart-bar" style="height: 60%"></div>
+                <div class="chart-bar" style="height: 85%"></div>
+                <div class="chart-bar" style="height: 70%"></div>
+                <div class="chart-bar" style="height: 100%"></div>
+                <div class="chart-bar" style="height: 50%"></div>
+                <div class="chart-bar" style="height: 20%"></div>
+              </div>
+              <div class="bar-chart-days">
+                <span>Mon</span><span>Tue</span><span>Wed</span> <span>Thu</span
+                ><span>Fri</span><span>Sat</span><span>Sun</span>
+              </div>
+            </div>
+          </div>
+          <div class="ratio-chart">
+            <div class="ratio-chart-heading">
+              <p class="area-chart-h3">Claims Ratio</p>
+            </div>
+            <div class="ratio-chart-graph">
+              <div class="ratio-graph-circle">
+                <div class="inner-circle">
+                  <h3>83%</h3>
+                  <p>Success</p>
+                </div>
+              </div>
+            </div>
+            <div class="ratio-chart-points">
+              <div class="ratio-chart-point1 ratio-chart-point">
+                <img src="/icons/Green Dot.svg" alt="Green Dot Icon" />
+                <p>Approved</p>
+                <span>842</span>
+              </div>
+              <div class="ratio-chart-point2 ratio-chart-point">
+                <img src="/icons/Blue Dot.svg" alt="Blue Dot Icon" />
+                <p>Pending</p>
+                <span>128</span>
+              </div>
+              <div class="ratio-chart-point3 ratio-chart-point">
+                <img src="/icons/Red Dot.svg" alt="Red Dot Icon" />
+                <p>Rejected</p>
+                <span>42</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="revenue-claims">
+          <div class="claims-header">
+            <div class="claims-header-left">
+              <h3>Recent Claims</h3>
+            </div>
+
+            <a href="#" class="view-all"> View All Claims → </a>
+          </div>
+
+          <!-- TABLE WRAPPER -->
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Patient</th>
+                  <th>Claim ID</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="patient">
+                      <strong>John Radcliffe</strong>
+                      <span>DOB: 12/05/1984</span>
+                    </div>
+                  </td>
+
+                  <td class="claim-id">CLM-98231</td>
+                  <td>Oct 24, 2023</td>
+                  <td class="amount">$1,420.00</td>
+
+                  <td>
+                    <span class="badge paid">Paid</span>
+                  </td>
+
+                  <td class="action">⋮</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="patient">
+                      <strong>Sarah McAllister</strong>
+                      <span>DOB: 05/22/1991</span>
+                    </div>
+                  </td>
+
+                  <td>CLM-98245</td>
+                  <td>Oct 25, 2023</td>
+                  <td class="amount">$850.50</td>
+
+                  <td>
+                    <span class="badge pending">Pending</span>
+                  </td>
+
+                  <td class="action">⋮</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="patient">
+                      <strong>Benjamin Wallace</strong>
+                      <span>DOB: 11/14/1975</span>
+                    </div>
+                  </td>
+
+                  <td>CLM-98256</td>
+                  <td>Oct 26, 2023</td>
+                  <td class="amount">$3,200.00</td>
+
+                  <td>
+                    <span class="badge rejected">Rejected</span>
+                  </td>
+
+                  <td class="action">⋮</td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="patient">
+                      <strong>Elena Hernandez</strong>
+                      <span>DOB: 02/09/1988</span>
+                    </div>
+                  </td>
+
+                  <td>CLM-98260</td>
+                  <td>Oct 26, 2023</td>
+                  <td class="amount">$125.00</td>
+
+                  <td>
+                    <span class="badge paid">Paid</span>
+                  </td>
+
+                  <td class="action">⋮</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>

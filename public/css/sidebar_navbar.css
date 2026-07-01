@@ -1,0 +1,178 @@
+/* For overall Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------------------------------------- Dashboard Styling --------------------------------------- */
+
+/* Container */
+.container {
+  display: flex;
+}
+/* ------------------- Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #eff4ff;
+  flex: 0 0 18%;
+  min-width: 200px;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+/* Sidebar - Title */
+.sidebar-title {
+  width: 100%;
+  padding-bottom: 2.5rem;
+  padding: 0 1rem 2.5rem 1rem;
+}
+.sidebar-title h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  color: #004ac6;
+  line-height: 2rem;
+  letter-spacing: -0.24px;
+}
+.sidebar-title p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #434655;
+}
+/* Sidebar - Options */
+.sidebar-options {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 2rem;
+}
+.sidebar-options .sidebar-option {
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.sidebar-options a {
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #434655;
+}
+.sidebar-option1 a {
+  color: #004ac6 !important;
+}
+.sidebar-option1 {
+  border-right: 4px solid #004ac6 !important;
+  font-weight: 700;
+}
+
+
+/* Sidebar - Last Buttons */
+.sidebar-btns {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #c3c6d7;
+  gap: 0.25rem;
+  padding-top: 1.5rem;
+}
+.sidebar-btns .sidebar-btns-button {
+  text-align: center;
+  background-color: #004ac6;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-btns-button:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 2px 0px 10px #5573a7;
+}
+/* Sidebar - Last anchor buttons */
+.sidebar-btns li {
+  display: flex;
+  list-style: none;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+.sidebar-btns a {
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #434655;
+}
+
+/* ----------------- Navbar */
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f8f9ff;
+}
+.navbar {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  height: 4rem;
+  padding: 1rem 2rem;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+/* Navbar - navbar form & input */
+.nav-form {
+  flex: 1;
+}
+.nav-form img {
+  color: #737686;
+  font-size: 1.125rem;
+  position: absolute;
+  top: 35%;
+  left: 4%;
+}
+.navbar input {
+  background-color: #e5eeff;
+  border: none;
+  width: 100%;
+  padding: 0.625rem 1rem 0.625rem 2.5rem;
+  border-radius: 2rem;
+}
+.navbar input::placeholder {
+  color: #6b7280;
+  font-size: 0.825rem;
+}
+/* Navbar - navbar end profile */
+.nav-profile {
+  display: flex;
+  border-left: 1px solid #c3c6d7;
+}
+.nav-profile-titles {
+  margin-left: 1rem;
+}
+.nav-profile .nav-profile-heading {
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+.nav-profile .nav-profile-description {
+  font-size: 0.625rem;
+  color: #434655;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  text-align: end;
+}
+.nav-profile img {
+  margin-left: 1rem;
+}
+/* Navbar - navbar icons */
+.nav-icons {
+  align-content: center;
+}
+.nav-icons img {
+  margin-right: 1rem;
+}

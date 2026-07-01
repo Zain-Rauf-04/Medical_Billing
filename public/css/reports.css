@@ -1,0 +1,869 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f6f8ff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.reports-container {
+  width: 100%;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: "Manrope", sans-serif !important;
+  font-size: 2.25rem;
+  letter-spacing: -0.72px;
+  color: #0b1c30;
+}
+
+.header p {
+  color: #434655;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.btns img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.btn {
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background-color: #004ac6;
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px -4px #004ac633;
+  box-shadow: 0px 10px 15px -3px #004ac633;
+}
+
+/* TOP */
+.top {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 18px;
+}
+
+.card {
+  flex: 1;
+  background-color: #fff;
+  padding: 1.5rem 1.5rem 3.125rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6b7280;
+}
+.row .icon {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.percentage {
+  font-family: "Manrope", sans-serif !important;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+.top p {
+  color: #434655;
+  font-size: 0.7rem;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+/* COLORS */
+.card-green {
+  color: #006b5f;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.card-red {
+  color: #943700;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.card-blue {
+  color: #004ac6;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.muted {
+  color: #434655;
+  font-size: 0.875rem;
+}
+.icon-green {
+  background-color: #006b5f1a;
+}
+.icon-brown {
+  background: #9437001a;
+}
+.icon-blue {
+  background: #004ac61a;
+}
+
+/* LINE */
+.green-line {
+  height: 6px;
+  margin-top: 2rem;
+  border-radius: 6px;
+  background-color: #006b5f;
+  width: 85%;
+}
+
+/* MINI */
+.mini {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.mini div {
+  flex: 1;
+  background-color: #bc4800;
+}
+
+/* MIDDLE */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.middle-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(25, 42, 70, 0.08);
+}
+
+.revenue-card {
+  flex: 1;
+  padding: 18px 20px;
+}
+
+.payer-card {
+  width: 230px;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.card-header h2,
+.payer-card h2 {
+  font-family: "Manrope", sans-serif !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0b1c30;
+}
+
+/* ===========================
+   LEGEND
+=========================== */
+
+.legend {
+  display: flex;
+  gap: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-item p {
+  font-size: 0.75rem;
+  color: #434655;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.blue {
+  background-color: #2563eb;
+}
+
+.green {
+  background-color: #6df5e1;
+}
+
+/* ===========================
+   CHART
+=========================== */
+
+.chart {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #c3c6d7;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 1px dashed #d7ddea;
+}
+
+.line1 {
+  bottom: 60px;
+}
+
+.line2 {
+  bottom: 120px;
+}
+
+.line3 {
+  bottom: 180px;
+}
+.line4 {
+  bottom: 240px;
+}
+
+/* ===========================
+   BARS
+=========================== */
+
+.bars {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+}
+
+.month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-group {
+  height: 190px;
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.bar {
+  width: 12px;
+  border-radius: 6px 6px 0 0;
+}
+
+.revenue {
+  background-color: #2f62df;
+}
+
+.collection {
+  background-color: #6be6d7;
+}
+
+/* Heights */
+
+.revenue.jan {
+  height: 145px;
+}
+
+.collection.jan {
+  height: 135px;
+}
+
+.revenue.feb {
+  height: 172px;
+}
+
+.collection.feb {
+  height: 158px;
+}
+
+.revenue.mar {
+  height: 126px;
+}
+
+.collection.mar {
+  height: 121px;
+}
+
+.revenue.apr {
+  height: 180px;
+}
+
+.collection.apr {
+  height: 168px;
+}
+
+.revenue.may {
+  height: 154px;
+}
+
+.collection.may {
+  height: 148px;
+}
+
+.revenue.jun {
+  height: 165px;
+}
+
+.collection.jun {
+  height: 160px;
+}
+
+.month span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #434655;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   DONUT
+=========================== */
+
+.donut-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 35px;
+}
+
+.donut {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  border: 10px solid #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-center {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1px #edf1f7;
+}
+
+.small-text {
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  color: #434655;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.donut-center h3 {
+  font-family: "Manrope", sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0b1c30;
+}
+
+/* ===========================
+   PAYER LIST
+=========================== */
+
+.payer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.payer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.medicare {
+  background-color: #004ac6;
+}
+
+.blue-shield {
+  background-color: #006b5f;
+}
+
+.aetna {
+  background-color: #bc4800;
+}
+
+.other {
+  background-color: #d3e4fe;
+}
+
+.payer-left p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #0b1c30;
+}
+
+.payer-item strong {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #0b1c30;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .payer-card {
+    width: 100%;
+  }
+}
+
+/* TABLE */
+:root {
+  --white: #ffffff;
+
+  --body-bg: #f5f7fb;
+
+  --border: #e2e8f0;
+
+  --header-bg: #EFF4FF80;
+
+  --text: #0B1C30;
+
+  --muted: #434655;
+
+  --table-head: #4b5563;
+
+  --primary: #2563eb;
+
+  --shadow: rgba(15, 23, 42, 0.08);
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.reports-card {
+  width: 100%;
+  background-color: var(--white);
+
+  border: 0.0625rem solid var(--border);
+
+  border-radius: 0.75rem;
+
+  box-shadow: 0px 2px 4px -2px #0f172a0d;
+  box-shadow: 0px 4px 6px -1px #0f172a1a;
+  backdrop-filter: blur(12px);
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.15rem;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-left h2 {
+    font-family: "Manrope", sans-serif !important;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  color: var(--text);
+}
+
+.header-left p {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ==========================================
+   TABS
+========================================== */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid #C3C6D7;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  overflow: hidden;
+  background-color: #EFF4FF;
+}
+
+.tab-btn {
+  min-width: 4.75rem;
+  height: 2rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  background-color: transparent;
+}
+
+.tab-btn.active {
+    padding: 0.25rem 1rem;
+  background-color: var(--white);
+  color: var(--text);
+  box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.reports-table {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================
+   TABLE HEADER
+========================================== */
+
+.table-head {
+  display: flex;
+  align-items: center;
+  height: 2.35rem;
+  padding: 0 1.15rem;
+  background-color: var(--header-bg);
+  border-top: 0.0625rem solid var(--border);
+}
+
+.table-head .col {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ==========================================
+   COLUMN WIDTHS
+========================================== */
+
+.col {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.report-col {
+  flex: 2.65;
+}
+
+.frequency-col {
+  flex: 1.7;
+}
+
+.recipient-col {
+  flex: 2.35;
+}
+
+.status-col {
+  flex: 1.1;
+}
+
+.run-col {
+  flex: 1.35;
+}
+
+/* ==========================================
+   TABLE ROW
+   (structure only)
+========================================== */
+
+.table-row {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 3.4rem;
+
+  padding: 0 1.15rem;
+
+  border-bottom: 0.0625rem solid #d9e2ef;
+}
+
+/* ==========================================
+   REPORT INFO
+========================================== */
+
+.report-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.625rem;
+}
+
+.icon-box {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon-box img {
+    margin-right: 0.75rem;
+}
+
+.report-info h3 {
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  line-height: 1.1;
+
+  color: #1f2937;
+}
+
+/* ==========================================
+   TABLE CELL TYPOGRAPHY
+========================================== */
+
+.frequency-col,
+.recipient-col,
+.run-col {
+  font-size: 0.95rem;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+
+  color: #4b5563;
+}
+
+.run-col {
+  justify-content: flex-start;
+}
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-width: 2.65rem;
+
+  height: 1.3rem;
+
+  padding: 0 0.55rem;
+
+  border-radius: 999rem;
+
+  font-size: 0.625rem;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.active {
+  color: #006F64;
+  background-color: #6DF5E14D;
+}
+
+.paused {
+  color: #434655;
+  background-color: #D3E4FE;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.reports-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #C3C6D7;
+  background-color: #EFF4FF4D;
+}
+
+.reports-footer a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+  color: #004AC6;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.arrow {
+  font-size: 1rem;
+
+  line-height: 1;
+}
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+.table-row:hover {
+  background-color: #fafcff;
+}
+
+.tab-btn {
+  transition: 0.2s;
+}
+
+.tab-btn:hover {
+  background-color: #f7f9fd;
+}
+
+.reports-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .reports-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 1rem;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .tab-btn {
+    flex: 1;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-row {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.9rem;
+
+    padding: 1rem;
+  }
+
+  .col {
+    width: 100%;
+
+    flex: unset;
+  }
+}

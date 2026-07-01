@@ -1,0 +1,312 @@
+<div class="page">
+  <nav class="breadcrumb">
+    <a href="#" class="breadcrumb__link">Patients</a>
+    <span class="breadcrumb__sep">/</span>
+    <a href="#" class="breadcrumb__link breadcrumb__link--active"
+      >Patient Profile</a
+    >
+  </nav>
+  <header class="page-header">
+    <h1 class="page-title">Alexander Sterling</h1>
+    <div class="page-header__actions">
+      <button class="btn btn--outline">
+        <img src="/icons/Printer.svg" alt="Printer Icon" />
+        Print Record
+      </button>
+      <button class="btn btn--primary">
+        <img src="/icons/Plus-white.svg" alt="Plus Icon" />
+        New Claim
+      </button>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="layout-sidebar">
+      <div class="card patient-card">
+        <div class="patient-card__photo-wrap">
+          <img
+            class="patient-card__photo"
+            src="/images/Profile 1.jpg"
+            alt="Alexander Sterling"
+          />
+          <span class="patient-card__status"></span>
+        </div>
+        <h2 class="patient-card__name">Alexander Sterling</h2>
+        <p class="patient-card__id">Patient ID: #MED-99201</p>
+        <dl class="patient-card__details">
+          <div class="patient-card__row">
+            <dt class="patient-card__label">Date of Birth</dt>
+            <dd class="patient-card__value">May 14, 1982 (41y)</dd>
+          </div>
+          <div class="patient-card__row">
+            <dt class="patient-card__label">Contact</dt>
+            <dd class="patient-card__value">+1 (555) 012-3456</dd>
+          </div>
+          <div class="patient-card__row">
+            <dt class="patient-card__label">Email</dt>
+            <dd class="patient-card__value patient-card__value--link">
+              a.sterling@email.com
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="card insurance-card">
+        <div class="card__header">
+          <h2 class="card__title">Insurance Policy</h2>
+          <span class="badge badge--active">ACTIVE</span>
+        </div>
+        <div class="provider-box">
+          <p class="provider-box__label">Provider</p>
+          <p class="provider-box__value">BlueCross BlueShield</p>
+        </div>
+        <div class="policy-grid">
+          <div>
+            <p class="policy-grid__label">Policy #</p>
+            <p class="policy-grid__value">BCS-90021188</p>
+          </div>
+          <div>
+            <p class="policy-grid__label">Group ID</p>
+            <p class="policy-grid__value">GRP-442</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="card__title">Medical History Summary</h2>
+        <ul class="history-list">
+          <li class="history-list__item">
+            <span class="history-list__dot history-list__dot--blue"></span>
+            <div>
+              <p class="history-list__title">Type 2 Diabetes Mellitus</p>
+              <p class="history-list__desc">Diagnosed: 2018</p>
+            </div>
+          </li>
+          <li class="history-list__item">
+            <span class="history-list__dot history-list__dot--blue"></span>
+            <div>
+              <p class="history-list__title">Hypertension</p>
+              <p class="history-list__desc">Controlled via medication</p>
+            </div>
+          </li>
+          <li class="history-list__item">
+            <span class="history-list__dot history-list__dot--red"></span>
+            <div>
+              <p class="history-list__title">Penicillin Allergy</p>
+              <p class="history-list__desc">Severe Reaction</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main">
+      <!-- Record Update Wizard -->
+      <div class="card wizard">
+        <div class="wizard__header">
+          <span class="wizard__step-num">1</span>
+          <div class="wizard__heading">
+            <h2 class="wizard__title">Record Update Wizard</h2>
+            <p class="wizard__subtitle">
+              Currently editing service from Oct 12, 2023
+            </p>
+          </div>
+          <svg
+            class="wizard__deco"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13"
+              stroke="#9CA3AF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.5 2.5C18.8978 2.10218 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10218 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10218 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z"
+              stroke="#9CA3AF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="wizard__fields">
+          <div class="field">
+            <label class="field__label" for="service-category"
+              >Service Category</label
+            >
+            <div class="select">
+              <select class="select__input" id="service-category">
+                <option>Diagnostic Imaging</option>
+              </select>
+              <svg
+                class="select__chevron"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 9L12 15L18 9"
+                  stroke="#6B7280"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field__label" for="cpt-code">CPT Code</label>
+            <input
+              class="field__input"
+              type="text"
+              id="cpt-code"
+              value="70450"
+            />
+          </div>
+          <div class="field">
+            <label class="field__label" for="total-amount">Total Amount</label>
+            <div class="amount-input">
+              <span class="amount-input__prefix">$</span>
+              <input
+                class="amount-input__field"
+                type="text"
+                id="total-amount"
+                value="1250.00"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wizard__footer">
+          <ul class="wizard__dots">
+            <li class="wizard__dot wizard__dot--active"></li>
+            <li class="wizard__dot"></li>
+            <li class="wizard__dot"></li>
+          </ul>
+          <button class="btn btn--primary">
+            Continue to Insurance Verification
+          </button>
+        </div>
+      </div>
+      <div class="card billing">
+        <div class="billing__header">
+          <h2 class="card__title">Billing History</h2>
+          <div class="billing__header-actions">
+            <button class="icon-btn" aria-label="Filter">
+              <img src="/icons/Down Head Icon.svg" alt="Down Head Icon" />
+            </button>
+            <button class="icon-btn" aria-label="Download">
+              <img src="/icons/Download 2 Icon.svg" alt="Download Icon" />
+            </button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="billing-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Service / CPT</th>
+                <th>Amount</th>
+                <th>Ins. Paid</th>
+                <th>Pat. Resp.</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="billing-table__date">Oct 12,<br />2023</td>
+                <td>
+                  <p class="billing-table__service">Head CT Scan</p>
+                  <p class="billing-table__cpt">CPT: 70450</p>
+                </td>
+                <td>$1,250.00</td>
+                <td class="text-success">$1,125.00</td>
+                <td>$125.00</td>
+                <td>
+                  <span
+                    class="status-dot status-dot--paid"
+                    aria-label="Paid"
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="billing-table__date">Sep 28,<br />2023</td>
+                <td>
+                  <p class="billing-table__service">Lab Panel (Metabolic)</p>
+                  <p class="billing-table__cpt">CPT: 80048</p>
+                </td>
+                <td>$340.00</td>
+                <td>$0.00</td>
+                <td>$340.00</td>
+                <td>
+                  <span
+                    class="status-dot status-dot--pending"
+                    aria-label="Pending"
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="billing-table__date">Aug 15,<br />2023</td>
+                <td>
+                  <p class="billing-table__service">General Exam</p>
+                  <p class="billing-table__cpt">CPT: 99213</p>
+                </td>
+                <td>$185.00</td>
+                <td class="text-success">$150.00</td>
+                <td>$35.00</td>
+                <td>
+                  <span
+                    class="status-dot status-dot--paid"
+                    aria-label="Paid"
+                  ></span>
+                </td>
+              </tr>
+              <tr>
+                <td class="billing-table__date">Jul 02,<br />2023</td>
+                <td>
+                  <p class="billing-table__service">Emergency Room Visit</p>
+                  <p class="billing-table__cpt">CPT: 99283</p>
+                </td>
+                <td>$2,450.00</td>
+                <td class="text-danger">$0.00</td>
+                <td>$2,450.00</td>
+                <td>
+                  <span
+                    class="status-dot status-dot--denied"
+                    aria-label="Denied"
+                  ></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="billing__footer">
+          <p class="billing__footer-text">Showing 4 of 12 recent entries</p>
+          <div class="billing__footer-actions">
+            <button class="btn btn--ghost btn--sm">Previous</button>
+            <button class="btn btn--ghost btn--sm">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="summary-grid">
+        <div class="summary-card summary-card--blue">
+          <p class="summary-card__label">Total Billed</p>
+          <p class="summary-card__value summary-card__value--blue">$4,225.00</p>
+        </div>
+        <div class="summary-card summary-card--green">
+          <p class="summary-card__label">Total Recovered</p>
+          <p class="summary-card__value summary-card__value--green">
+            $1,275.00
+          </p>
+        </div>
+        <div class="summary-card summary-card--grey">
+          <p class="summary-card__label">Outstanding<br />Balance</p>
+          <p class="summary-card__value summary-card__value--dark">$2,950.00</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

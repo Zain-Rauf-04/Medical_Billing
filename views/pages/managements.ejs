@@ -1,0 +1,361 @@
+<div class="app">
+  <main class="main-content">
+    <header class="page-header">
+      <div class="page-heading">
+        <h1>Denial Management</h1>
+        <p>Review and resolve 42 pending rejected claims.</p>
+      </div>
+      <div class="header-actions">
+        <button class="filter-btn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H20"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7 12H17"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M10 18H14"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span> Filter </span>
+        </button>
+        <button class="export-btn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 4V15"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 11L12 15L16 11"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5 20H19"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span> Export </span>
+        </button>
+      </div>
+    </header>
+    <section class="stats">
+      <article class="stat-card">
+        <p class="stat-label">TOTAL DENIED</p>
+        <h2 class="stat-value">$142,500</h2>
+        <div class="stat-footer">
+          <span class="negative"> ↓ 12% vs last month </span>
+        </div>
+      </article>
+      <article class="stat-card">
+        <p class="stat-label">RESOLVE RATE</p>
+        <h2 class="stat-value">68.4%</h2>
+        <div class="stat-footer">
+          <span class="positive">↑ 4.2% efficiency </span>
+        </div>
+      </article>
+      <article class="stat-card">
+        <p class="stat-label">AVG. DAYS TO APPEAL</p>
+        <h2 class="stat-value">4.2 Days</h2>
+        <div class="stat-footer">
+          <span> Target &lt; 5.0 days </span>
+        </div>
+      </article>
+      <article class="stat-card">
+        <p class="stat-label">READY FOR BATCH</p>
+        <h2 class="stat-value">18</h2>
+        <div class="stat-footer">
+          <a href="#"> View batch list </a>
+        </div>
+      </article>
+    </section>
+    <section class="claims-table">
+      <nav class="tabs">
+        <button class="tab active">All Denials</button>
+        <button class="tab">Eligibility</button>
+        <button class="tab">Coding</button>
+        <button class="tab">Timely Filing</button>
+      </nav>
+      <div class="table-head">
+        <div class="column columns claim-id">CLAIM ID</div>
+        <div class="column columns patient">PATIENT</div>
+        <div class="column columns reason">REASON CATEGORY</div>
+        <div class="column columns amount">AMOUNT</div>
+        <div class="column columns denied-date">DENIED DATE</div>
+        <div class="column columns action">ACTION</div>
+      </div>
+      <div class="table-body">
+        <div class="table-row active-row">
+          <div class="column claim-id">
+            <span class="claim-number"> #CLM-98241 </span>
+          </div>
+          <div class="column patient">
+            <div class="patient-info">
+              <h3>Marcus Holloway</h3>
+              <p>ID: 554-00-1123</p>
+            </div>
+          </div>
+          <div class="column reason">
+            <span class="badge eligibility">Eligibility (CO-27) </span>
+          </div>
+          <div class="column amount">$3,420.00</div>
+          <div class="column denied-date">Oct 12, 2023</div>
+          <div class="column action">
+            <button class="action-btn">Appeal</button>
+            <button class="menu-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="5" r="1.7" />
+                <circle cx="12" cy="12" r="1.7" />
+                <circle cx="12" cy="19" r="1.7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="column claim-id">
+            <span class="claim-number"> #CLM-98110 </span>
+          </div>
+          <div class="column patient">
+            <div class="patient-info">
+              <h3>Elena Rodriguez</h3>
+              <p>ID: 882-11-4456</p>
+            </div>
+          </div>
+          <div class="column reason">
+            <span class="badge coding">Coding (M-78) </span>
+          </div>
+          <div class="column amount">$840.00</div>
+          <div class="column denied-date">Oct 14, 2023</div>
+          <div class="column action">
+            <button class="action-btn">Resubmit</button>
+            <button class="menu-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="5" r="1.7" />
+                <circle cx="12" cy="12" r="1.7" />
+                <circle cx="12" cy="19" r="1.7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="column claim-id">
+            <span class="claim-number"> #CLM-97992 </span>
+          </div>
+          <div class="column patient">
+            <div class="patient-info">
+              <h3>Jameson Blake</h3>
+              <p>ID: 102-44-3321</p>
+            </div>
+          </div>
+          <div class="column reason">
+            <span class="badge timely">Timely Filing (CO-29) </span>
+          </div>
+          <div class="column amount">$12,150.00</div>
+          <div class="column denied-date">Oct 15, 2023</div>
+          <div class="column action">
+            <button class="action-btn">Appeal</button>
+            <button class="menu-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="5" r="1.7" />
+                <circle cx="12" cy="12" r="1.7" />
+                <circle cx="12" cy="19" r="1.7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="column claim-id">
+            <span class="claim-number"> #CLM-97880 </span>
+          </div>
+          <div class="column patient">
+            <div class="patient-info">
+              <h3>Sarah Connor</h3>
+              <p>ID: 994-22-1002</p>
+            </div>
+          </div>
+          <div class="column reason">
+            <span class="badge eligibility">Eligibility (CO-27) </span>
+          </div>
+          <div class="column amount">$1,200.00</div>
+          <div class="column denied-date">Oct 16, 2023</div>
+          <div class="column action">
+            <button class="action-btn danger">Write Off</button>
+            <button class="menu-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="12" cy="5" r="1.7" />
+                <circle cx="12" cy="12" r="1.7" />
+                <circle cx="12" cy="19" r="1.7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="table-footer">
+        <p class="results-text">Showing 1-10 of 42 results</p>
+        <div class="pagination">
+          <button class="page-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="page-number active">1</button>
+          <button class="page-number">2</button>
+          <button class="page-number">3</button>
+          <button class="page-number">4</button>
+          <button class="page-btn">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <aside class="claim-sidebar">
+    <div class="claim-panel">
+      <div class="claim-header">
+        <div class="claim-title">
+          <h2>Claim Details</h2>
+          <p>#CLM-98241</p>
+        </div>
+        <button class="close-btn">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 6L6 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M6 6L18 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="reason-card">
+        <div class="reason-heading">
+          <div class="warning-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4L21 20H3L12 4Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+
+              <path
+                d="M12 9V13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="12" cy="17" r="1" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="reason-title">
+            <span> Reason </span>
+            <h3>Code: CO-27</h3>
+          </div>
+        </div>
+        <div class="reason-body">
+          <h4>Expenses incurred after coverage terminated.</h4>
+          <p>
+            The insurer has denied this claim because the patient's insurance
+            policy was recorded as inactive on the date of service provided (Oct
+            10, 2023).
+          </p>
+        </div>
+      </div>
+      <div class="action-heading">RECOMMENDED ACTIONS</div>
+      <div class="action-card">
+        <div class="action-icon verify">
+          <img src="/icons/Verified Icon.svg" alt="Verified Icon" />
+        </div>
+        <div class="action-content">
+          <h4>Verify Eligibility</h4>
+          <p>Check secondary insurance or update primary portal.</p>
+        </div>
+      </div>
+      <div class="action-card">
+        <div class="action-icon upload">
+          <img src="/icons/Attach-blue.svg" alt="Attach Icon" />
+        </div>
+        <div class="action-content">
+          <h4>Attach EOB</h4>
+          <p>Upload Explanation of Benefits from primary for coordination.</p>
+        </div>
+      </div>
+    </div>
+    <button class="floating-btn">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 5V19"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+        <path
+          d="M5 12H19"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
+  </aside>
+</div>

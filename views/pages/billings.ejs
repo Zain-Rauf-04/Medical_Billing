@@ -1,0 +1,201 @@
+<body>
+  <div class="billing-main">
+    <div class="cards">
+      <div class="card">
+        <div class="card-top">
+          <div class="icon blue">
+            <img src="/icons/Status Icon.svg" alt="Status Icon" />
+          </div>
+          <span class="success">+12% vs LW</span>
+        </div>
+        <h3>Claim Status</h3>
+        <p>Tracking active cycles</p>
+        <div class="card-bottom">
+          <span>Active</span>
+          <strong>142</strong>
+        </div>
+        <div class="progress">
+          <div class="fill blue-fill"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-top">
+          <div class="icon green">
+            <img src="/icons/Verified Icon.svg" alt="Verifications Icon" />
+          </div>
+          <span class="danger">4 Pending</span>
+        </div>
+        <h3>Verifications</h3>
+        <p>Insurance eligibility</p>
+        <div class="avatars">
+          <div class="avatar">
+            <img src="/images/Verification 1.jpg" alt="Verification images" />
+          </div>
+          <div class="avatar">
+            <img src="/images/Verification 2.jpg" alt="Verification images" />
+          </div>
+          <div class="avatar">
+            <img src="/images/Verification 3.jpg" alt="Verification images" />
+          </div>
+          <div class="avatar more">+8</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-top">
+          <div class="icon orange">
+            <img src="/icons/Wallet-grey Icon.svg" alt="Wallet Icon" />
+          </div>
+          <span class="amount">$42.8k</span>
+        </div>
+        <h3>Payment Posting</h3>
+        <p>Revenue recorded today</p>
+        <div class="bars">
+          <div class="bar small"></div>
+          <div class="bar medium"></div>
+          <div class="bar large active"></div>
+          <div class="bar medium"></div>
+          <div class="bar medium"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-top">
+          <div class="icon red">
+            <img src="/icons/Warning Icon.svg" alt="Warning Icon" />
+          </div>
+          <span class="avg-head">Avg 32 Days</span>
+        </div>
+        <h3>AR Follow-up</h3>
+        <p>Accounts Receivable</p>
+        <button class="review-btn">Review Aged (12)</button>
+      </div>
+    </div>
+    <div class="table-card">
+      <div class="table-header">
+        <div class="header-left">
+          <h2>Billing Queue</h2>
+          <div class="table-head-live">
+            <span class="live-dot"></span>
+            <span class="live-text">Live Updates</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <button class="filter-btn">
+            <img src="/icons/Calender.svg" alt="Provider Icon" />Last 30 Days
+          </button>
+          <button class="filter-btn">
+            <img src="/icons/Provider icon.svg" alt="Provider Icon" />Provider
+          </button>
+          <button class="filter-btn">
+            <img src="/icons/Setting icon.svg" alt="Status Icon" />Status
+          </button>
+          <button class="filter-btn side-filter-btn side-filter-btn1">
+            <img src="/icons/PDF Icon.svg" alt="PDF Icon" />PDF
+          </button>
+          <button class="filter-btn side-filter-btn">
+            <img src="/icons/CSV Icon.svg" alt="CSV Icon" />CSV
+          </button>
+        </div>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Patient & Claim ID</th>
+              <th>Date of Service</th>
+              <th>CPT/ICD-10</th>
+              <th>Payer</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="patient">
+                  <strong>Elena Rodriguez</strong>
+                  <small>#CLM-99281-01</small>
+                </div>
+              </td>
+              <td class="date-of-service">Oct 24, 2023</td>
+              <td>
+                <div class="codes">
+                  <span class="code1">99213</span>
+                  <span class="code2">I10</span>
+                </div>
+              </td>
+              <td>BlueShield PPO</td>
+              <td class="amount-blue">$450.00</td>
+              <td><span class="status paid">Paid</span></td>
+              <td>⋮</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="patient">
+                  <strong>Marcus Thorne</strong>
+                  <small>#CLM-99285-04</small>
+                </div>
+              </td>
+              <td class="date-of-service">Oct 25, 2023</td>
+              <td>
+                <div class="codes">
+                  <span class="code1">99285</span>
+                  <span class="code2">S82.3</span>
+                </div>
+              </td>
+              <td>Medicare Part B</td>
+              <td class="amount-blue">$1,280.00</td>
+              <td><span class="status pending">Pending</span></td>
+              <td>⋮</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="patient">
+                  <strong>Sophia Liang</strong>
+                  <small>#CLM-99302-09</small>
+                </div>
+              </td>
+              <td class="date-of-service">Oct 22, 2023</td>
+              <td>
+                <div class="codes">
+                  <span class="code1">99214</span>
+                  <span class="code2">E11.9</span>
+                </div>
+              </td>
+              <td>UnitedHealthcare</td>
+              <td class="amount-blue">$315.00</td>
+              <td><span class="status rejected">Rejected</span></td>
+              <td>⋮</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="patient">
+                  <strong>Johnathan Miller</strong>
+                  <small>#CLM-99315-12</small>
+                </div>
+              </td>
+              <td class="date-of-service">Oct 26, 2023</td>
+              <td>
+                <div class="codes">
+                  <span class="code1">93000</span>
+                  <span class="code2">Z00.00</span>
+                </div>
+              </td>
+              <td>Aetna Global</td>
+              <td class="amount-blue">$85.00</td>
+              <td><span class="status paid">Paid</span></td>
+              <td>⋮</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-footer">
+        <p>Showing 1-10 of 1,240 claims</p>
+        <div class="pagination">
+          <button>‹</button>
+          <button>›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
