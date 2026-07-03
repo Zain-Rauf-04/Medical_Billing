@@ -28,7 +28,7 @@ git clone https://github.com/your-username/medi-bill-pro.git
 2. Navigate to the project directory:
 
 ```bash
-cd medi-bill-pro
+cd Medical_Billing
 ```
 
 3. Install dependencies:
@@ -40,7 +40,7 @@ npm install
 4. Start the development server:
 
 ```bash
-npm run dev
+nodemon index.js
 ```
 
 ## Project Structure
